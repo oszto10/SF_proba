@@ -47,7 +47,6 @@ header {
   font-size: 60px;
   font-family: "Cambo", serif;
   font-weight: 300;
-  font-smooth: auto;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,10 +70,11 @@ input {
   width: 255px;
   height: 30px;
   background-color: #1c1c1c;
-  border: 1px solid #3e3e3e;
+  border: 0.5px solid #2c2c2c;
   font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 11px;
+  padding-inline-start: 11px;
 }
 
 .search-button {
@@ -124,7 +124,7 @@ input {
 .banner-title {
   position: absolute;
   display: flex;
-  top: 40%;
+  top: 40.5%;
   left: 39%;
   color: white;
   font-size: 60px;
@@ -151,7 +151,7 @@ input {
 }
 
 .container-bottom {
-  height: 600px;
+  height: 560px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,6 +160,7 @@ input {
   position: relative;
   max-width: 1499px;
   width: 100%;
+  background-color: #cdcdcd;
 }
 
 .cards {
@@ -219,6 +220,7 @@ input {
   font-family: "Yellowtail", cursive;
   font-size: 30px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .card:hover h4 {
@@ -270,7 +272,7 @@ input {
 
 .graybox {
   position: absolute;
-  top: 47%;
+  top: 51%;
   height: 145px;
   background-color: #c0c0c0;
   background: linear-gradient(#b8b8b8, #a6a6a6);
@@ -298,8 +300,9 @@ input {
   display: flex;
   align-items: flex-start;
   position: absolute;
-  top: 79%;
+  top: 84%;
   left: 18.2%;
+  gap: 11px;
 }
 
 footer {
@@ -325,6 +328,20 @@ footer {
 
   .graybox-text {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .banner-title {
+    font-size: 30px;
+    top: 30%;
+  }
+
+  .banner-body {
+    display: flex;
+
+    top: 40.5%;
+    font-size: 20px;
   }
 }
 
@@ -368,10 +385,14 @@ footer {
   .banner-title {
     margin-top: 10px;
     font-size: 30px;
+    top: 10%;
+    left: 25%;
   }
 
   .banner-body {
     font-size: 20px;
+    top: 39.5%;
+    left: 30%;
   }
 
   .graybox {
@@ -407,6 +428,21 @@ footer {
     width: 98%;
     justify-content: center;
     height: 280px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .banner-title {
+    margin-top: 10px;
+    font-size: 30px;
+    top: 5%;
+    left: 10%;
+  }
+
+  .banner-body {
+    font-size: 20px;
+    top: 39.5%;
+    left: 30%;
   }
 }
 
