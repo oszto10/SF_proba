@@ -100,7 +100,7 @@ input {
 }
 
 .container-top {
-  background-image: url(/images/background.png);
+  background-image: url(images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 594px;
